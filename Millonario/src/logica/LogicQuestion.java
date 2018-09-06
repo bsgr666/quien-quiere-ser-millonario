@@ -54,9 +54,9 @@ public class LogicQuestion {
                     objetoQuestion.setOptionC(resultadoConsulta.getString("optionC"));
                     objetoQuestion.setOptionD(resultadoConsulta.getString("optionD"));
                     
-                    listaquestion.add(objetoQuestion);
+                    listaquestion.add(objetoQuestion); 
                 }
-                //siempre se cierra para ahorrar espacio en memoria y no se sature de cosas que ya no necesitamos
+//siempre se cierra para ahorrar espacio en memoria y no se sature de cosas que ya no necesitamos
                 resultadoConsulta.close();
                 Persistencia.desconectar();
                 
@@ -66,8 +66,8 @@ public class LogicQuestion {
                 Logger.getLogger(LogicUser.class.getName()).log(Level.SEVERE, null, ex);
                 return null;
             }
-        }else{
+                }else{
             return null;
-        } 
+            } 
     }
 }
