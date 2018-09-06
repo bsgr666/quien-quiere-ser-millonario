@@ -10,30 +10,32 @@ package clases;
  * @author Estudiante
  */
 public class ScorePlayer {
-private int codigoScorePlayer;
-private String fechaScorePlayer;
-private int totalScorePlayer;
-private int codUser;
-private  int canResCorrecta;
-private int canResIncorrecta;
+// ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos eb tabla "ScorePlayer"
+    private int codScorePlayer;
+    private String fechaScorePlayer;
+    private int totalScorePlayer;
+    private int codUser; // Este atributo es una LLAVE FORANEA de la tabla USER
+    private  int canResCorrecta;
+    private int canResIncorrecta;
 
-public ScorePlayer(){
+// CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class
+    public ScorePlayer(){
     
     
-}
-
-    /**
-     * @return the codigoScorePlayer
-     */
-    public int getCodigoScorePlayer() {
-        return codigoScorePlayer;
     }
 
     /**
-     * @param codigoScorePlayer the codigoScorePlayer to set
+     * @return the codScorePlayer
      */
-    public void setCodigoScorePlayer(int codigoScorePlayer) {
-        this.codigoScorePlayer = codigoScorePlayer;
+    public int getCodScorePlayer() {
+        return codScorePlayer;
+    }
+
+    /**
+     * @param codScorePlayer the codScorePlayer to set
+     */
+    public void setCodScorePlayer(int codScorePlayer) {
+        this.codScorePlayer = codScorePlayer;
     }
 
     /**
