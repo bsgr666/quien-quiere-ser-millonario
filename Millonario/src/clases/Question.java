@@ -12,7 +12,7 @@ package clases;
 public class Question {
 // ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "Question"    
     private int codQuestion; // PRIMARY KEY
-    private String question;
+    private String answer;
     private String optionA;
     private String optionB;
     private String optionC;
@@ -47,15 +47,15 @@ public class Question {
      * @return the question
      */
     // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
-    public String getQuestion() {
-        return question;
+    public String getAnswer() {
+        return answer;
     }
 
     /**
      * @param question the question to set
      */
-    public void setQuestion(String question) {
-        this.question = question;
+    public void setAnswer(String question) {
+        this.answer = answer;
     }
 
     /**

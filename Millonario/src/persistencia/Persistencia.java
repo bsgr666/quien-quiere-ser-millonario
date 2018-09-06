@@ -26,7 +26,7 @@ public class Persistencia {
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
                 
                 // conectarse a la base de datos------------taller3 es el nombre de la base de datos  root_usuario   root_clave
-                con=DriverManager.getConnection("jdbc:mysql://localhost/taller3", "root","root");//esto es lo unico que se cambiiiiiiiia a la hora de trabajar
+                con=DriverManager.getConnection("jdbc:mysql://localhost/millonario", "root","root");//esto es lo unico que se cambiiiiiiiia a la hora de trabajar
                 //
                 areadb = con.createStatement();
                 //si todo es perfecto retornara verdadero y se podra conectar
