@@ -11,12 +11,11 @@ package clases;
  */
 public class Level {
 // ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "Level"
-    private int codLevel;
+    private int codLevel; // PRIMARY KEY
     private String nameLevel;
     private int scoreLevel;
-    
-
    
+    
 // CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class
     public Level(){
     
@@ -26,6 +25,7 @@ public class Level {
     /**
      * @return the codLevel
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodLevel() {
         return codLevel;
     }
@@ -40,6 +40,7 @@ public class Level {
     /**
      * @return the nameLevel
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getNameLevel() {
         return nameLevel;
     }
@@ -54,6 +55,7 @@ public class Level {
     /**
      * @return the scoreLevel
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getScoreLevel() {
         return scoreLevel;
     }

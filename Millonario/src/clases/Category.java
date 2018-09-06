@@ -10,9 +10,11 @@ package clases;
  * @author Estudiante
  */
 public class Category {
-    private int codCategory;//primary key
+// ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "Category"    
+    private int codCategory;//PRIMARY KEY
     private String nameCategory;
     
+// CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class    
     public Category(){//constructor
         
     }
@@ -20,6 +22,7 @@ public class Category {
     /**
      * @return the codCategory
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodCategory() {
         return codCategory;
     }
@@ -34,6 +37,7 @@ public class Category {
     /**
      * @return the nameCategory
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getNameCategory() {
         return nameCategory;
     }

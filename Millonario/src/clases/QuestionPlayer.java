@@ -9,11 +9,12 @@ package clases;
  * @author Equipo
  */
 public class QuestionPlayer {
-    
-    private int codPlayer;
-    private int codQuestion;
+// ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "QuestionPlayer"    
+    private int codPlayer; // PRIMARY KEY / FOREIGN KEY
+    private int codQuestion; // PRIMARY KEY / FOREIGN KEY
     private String answer;
     
+// CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class    
     public QuestionPlayer(){
         
     }
@@ -21,6 +22,7 @@ public class QuestionPlayer {
     /**
      * @return the codPlayer
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodPlayer() {
         return codPlayer;
     }
@@ -35,6 +37,7 @@ public class QuestionPlayer {
     /**
      * @return the codQuestion
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodQuestion() {
         return codQuestion;
     }
@@ -49,6 +52,7 @@ public class QuestionPlayer {
     /**
      * @return the answer
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getAnswer() {
         return answer;
     }

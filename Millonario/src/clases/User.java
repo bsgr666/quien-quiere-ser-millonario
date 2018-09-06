@@ -10,13 +10,14 @@ package clases;
  * @author Estudiante
  */
 public class User {
-
-    private int CodUser;
+// ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "User"
+    private int CodUser; // PRIMARY KEY
     private String Nombre;
     private String Apellido;
     private String Seudonimo;
     private int edad;
 
+// CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class    
     public User() {
 
     }
@@ -24,6 +25,7 @@ public class User {
     /**
      * @return the CodUser
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodUser() {
         return CodUser;
     }
@@ -38,6 +40,7 @@ public class User {
     /**
      * @return the Nombre
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getNombre() {
         return Nombre;
     }
@@ -52,6 +55,7 @@ public class User {
     /**
      * @return the Apellido
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getApellido() {
         return Apellido;
     }
@@ -66,6 +70,7 @@ public class User {
     /**
      * @return the Seudonimo
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getSeudonimo() {
         return Seudonimo;
     }
@@ -80,6 +85,7 @@ public class User {
     /**
      * @return the edad
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getEdad() {
         return edad;
     }
