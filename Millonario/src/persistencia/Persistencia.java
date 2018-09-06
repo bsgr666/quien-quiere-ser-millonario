@@ -15,6 +15,7 @@ import java.sql.Statement;
 public class Persistencia {
     public static Connection con;
     public static Statement areadb;
+    public static Statement areabd;
     
     
     public static boolean conectar()
