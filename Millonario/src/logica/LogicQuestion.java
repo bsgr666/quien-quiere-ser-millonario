@@ -55,12 +55,16 @@ public class LogicQuestion {
                     objetoQuestion.setOptionD(resultadoConsulta.getString("optionD"));
                     
                     listaquestion.add(objetoQuestion);
+                  
+                   
+                    
                 }
                 //siempre se cierra para ahorrar espacio en memoria y no se sature de cosas que ya no necesitamos
                 resultadoConsulta.close();
                 Persistencia.desconectar();
                 
                 return listaquestion;
+                
                 
             } catch (SQLException ex) {
                 Logger.getLogger(LogicUser.class.getName()).log(Level.SEVERE, null, ex);
