@@ -12,13 +12,13 @@ package clases;
 public class User {
 
     private int CodUser;
-    private String Nombre;
-    private String Apellido;
-    private String Seudonimo;
-    private int edad;
+    private String Name;
+    private String LastName;
+    private String Aka;
+    private int Age;
 
     public User() {
-
+        
     }
 
     /**
@@ -36,58 +36,60 @@ public class User {
     }
 
     /**
-     * @return the Nombre
+     * @return the Name
      */
-    public String getNombre() {
-        return Nombre;
+    public String getName() {
+        return Name;
     }
 
     /**
-     * @param Nombre the Nombre to set
+     * @param Name the Name to set
      */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     /**
-     * @return the Apellido
+     * @return the LastName
      */
-    public String getApellido() {
-        return Apellido;
+    public String getLastName() {
+        return LastName;
     }
 
     /**
-     * @param Apellido the Apellido to set
+     * @param LastName the LastName to set
      */
-    public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
+    public void setLastName(String LastName) {
+        this.LastName = LastName;
     }
 
     /**
-     * @return the Seudonimo
+     * @return the Aka
      */
-    public String getSeudonimo() {
-        return Seudonimo;
+    public String getAka() {
+        return Aka;
     }
 
     /**
-     * @param Seudonimo the Seudonimo to set
+     * @param Aka the Aka to set
      */
-    public void setSeudonimo(String Seudonimo) {
-        this.Seudonimo = Seudonimo;
+    public void setAka(String Aka) {
+        this.Aka = Aka;
     }
 
     /**
-     * @return the edad
+     * @return the Age
      */
-    public int getEdad() {
-        return edad;
+    public int getAge() {
+        return Age;
     }
 
     /**
-     * @param edad the edad to set
+     * @param Age the Age to set
      */
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setAge(int Age) {
+        this.Age = Age;
     }
+
+    
 }
