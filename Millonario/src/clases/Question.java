@@ -11,7 +11,7 @@ package clases;
  */
 public class Question {
 // ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "Question"    
-    private int codQuestion;
+    private int codQuestion; // PRIMARY KEY
     private String question;
     private String optionA;
     private String optionB;
@@ -19,9 +19,9 @@ public class Question {
     private String optionD;
     private String optionCorrect;
   //get y set de codigo de la tabla categoria
-  private int kindCategory;
+  private int kindCategory; // FOREIGN KEY
   //get y set de codigo de la tabla level
-  private int codLevel;
+  private int codLevel; // FOREIGN KEY
 
 // CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class  
     public Question(){
@@ -31,6 +31,7 @@ public class Question {
     /**
      * @return the codQuestion
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodQuestion() {
         return codQuestion;
     }
@@ -45,6 +46,7 @@ public class Question {
     /**
      * @return the question
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getQuestion() {
         return question;
     }
@@ -59,6 +61,7 @@ public class Question {
     /**
      * @return the optionA
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getOptionA() {
         return optionA;
     }
@@ -73,6 +76,7 @@ public class Question {
     /**
      * @return the optionB
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getOptionB() {
         return optionB;
     }
@@ -87,6 +91,7 @@ public class Question {
     /**
      * @return the optionC
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getOptionC() {
         return optionC;
     }
@@ -101,6 +106,7 @@ public class Question {
     /**
      * @return the optionD
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getOptionD() {
         return optionD;
     }
@@ -115,6 +121,7 @@ public class Question {
     /**
      * @return the optionCorrect
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getOptionCorrect() {
         return optionCorrect;
     }
@@ -129,6 +136,7 @@ public class Question {
     /**
      * @return the kindCategory
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getKindCategory() {
         return kindCategory;
     }
@@ -143,6 +151,7 @@ public class Question {
     /**
      * @return the codLevel
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodLevel() {
         return codLevel;
     }
