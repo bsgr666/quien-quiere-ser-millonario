@@ -24,7 +24,7 @@ public class LogicQuestion {
         String sentenciaConsulta = "";
         switch(level){
             case 1:
-                sentenciaConsulta = "select  * from questions_easy where code_level="+level ;
+                sentenciaConsulta = "select  * from questions where codeLevel="+level ;
                 break;
             case 2:
                 sentenciaConsulta = "select  * from questions_normal where code_level="+level ;
@@ -37,6 +37,7 @@ public class LogicQuestion {
                 break;
                 
         }
+        System.out.println(sentenciaConsulta);
         List<Question> listaquestion = new ArrayList<>();
         
         ResultSet resultadoConsulta = null;
@@ -53,11 +54,9 @@ public class LogicQuestion {
                     objetoQuestion.setOptionB(resultadoConsulta.getString("optionB"));
                     objetoQuestion.setOptionC(resultadoConsulta.getString("optionC"));
                     objetoQuestion.setOptionD(resultadoConsulta.getString("optionD"));
+                    objetoQuestion.setOptionCorrect(resultadoConsulta.getString("optionCorrect"));
                     
                     listaquestion.add(objetoQuestion);
-                  
-                   
-                    
                 }
                 //siempre se cierra para ahorrar espacio en memoria y no se sature de cosas que ya no necesitamos
                 resultadoConsulta.close();
@@ -67,10 +66,12 @@ public class LogicQuestion {
                 
                 
             } catch (SQLException ex) {
+                System.out.println("Error 1");
                 Logger.getLogger(LogicUser.class.getName()).log(Level.SEVERE, null, ex);
                 return null;
             }
         }else{
+            System.out.println("Error 2");
             return null;
         } 
     }
