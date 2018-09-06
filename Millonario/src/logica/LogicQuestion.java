@@ -20,7 +20,7 @@ import persistencia.Persistencia;
  */
 public class LogicQuestion {
     // consultar mostrar
-    public Question consultar(int level){
+    public List<Question> consultar(int level){
         String sentenciaConsulta = "";
         switch(level){
             case 1:
@@ -60,7 +60,7 @@ public class LogicQuestion {
                 resultadoConsulta.close();
                 Persistencia.desconectar();
                 
-                return listaquestion.get(level);
+                return listaquestion;
                 
             } catch (SQLException ex) {
                 Logger.getLogger(LogicUser.class.getName()).log(Level.SEVERE, null, ex);
