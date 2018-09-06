@@ -10,21 +10,23 @@ package clases;
  * @author Estudiante
  */
 public class Question {
-  private int codQuestion;
-  private String question;
-  private String optionA;
-  private String optionB;
-  private String optionC;
-  private String optionD;
-  private String optionCorrect;
+// ATRIBUTOS / METODOS: estos metodos son cada columna de nuestra base de datos en tabla "Question"    
+    private int codQuestion;
+    private String question;
+    private String optionA;
+    private String optionB;
+    private String optionC;
+    private String optionD;
+    private String optionCorrect;
   //get y set de codigo de la tabla categoria
   private int kindCategory;
   //get y set de codigo de la tabla level
   private int codLevel;
-  
- public Question(){
+
+// CONSTRUCTOR: es para poder crear los GET / SET en nuestro Java.class  
+    public Question(){
      
- }
+    }
 
     /**
      * @return the codQuestion
