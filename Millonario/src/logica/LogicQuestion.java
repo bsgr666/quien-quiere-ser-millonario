@@ -19,55 +19,64 @@ import persistencia.Persistencia;
  * @author Estudiante
  */
 public class LogicQuestion {
+
     // consultar mostrar
-    public List<Question> consultar(int level){
+
+    public List<Question> consultar(int level) {
         String sentenciaConsulta = "";
-        switch(level){
+        switch (level) {
             case 1:
-                sentenciaConsulta = "select  * from questions_easy where code_level="+level ;
+                sentenciaConsulta = "select  * from questions where codeLevel=" + level;
                 break;
             case 2:
-                sentenciaConsulta = "select  * from questions_normal where code_level="+level ;
+                sentenciaConsulta = "select  * from questions_normal where code_level=" + level;
                 break;
             case 3:
-                sentenciaConsulta = "select  * from questions_hard where code_level="+level ;
+                sentenciaConsulta = "select  * from questions_hard where code_level=" + level;
                 break;
             case 4:
-                sentenciaConsulta = "select  * from questions_more_hard where code_level="+level ;
+                sentenciaConsulta = "select  * from questions_more_hard where code_level=" + level;
                 break;
-                
+
         }
+        System.out.println(sentenciaConsulta);
         List<Question> listaquestion = new ArrayList<>();
-        
+
         ResultSet resultadoConsulta = null;
-        if(Persistencia.conectar()){
+        if (Persistencia.conectar()) {
             try {
                 Persistencia.areadb = Persistencia.con.createStatement();
                 resultadoConsulta = Persistencia.areadb.executeQuery(sentenciaConsulta);
-                
+
                 //mientras haya un registro va a seguir guardando por eso un mientras
-                while(resultadoConsulta.next()){
+                while (resultadoConsulta.next()) {
                     Question objetoQuestion = new Question();
                     objetoQuestion.setAnswer(resultadoConsulta.getString("answer"));
                     objetoQuestion.setOptionA(resultadoConsulta.getString("optionA"));
                     objetoQuestion.setOptionB(resultadoConsulta.getString("optionB"));
                     objetoQuestion.setOptionC(resultadoConsulta.getString("optionC"));
                     objetoQuestion.setOptionD(resultadoConsulta.getString("optionD"));
-                    
-                    listaquestion.add(objetoQuestion); 
+                    objetoQuestion.setOptionCorrect(resultadoConsulta.getString("optionCorrect"));
+
+                    listaquestion.add(objetoQuestion);
                 }
 //siempre se cierra para ahorrar espacio en memoria y no se sature de cosas que ya no necesitamos
                 resultadoConsulta.close();
                 Persistencia.desconectar();
-                
+
                 return listaquestion;
-                
+
             } catch (SQLException ex) {
+                System.out.println("Error 1");
                 Logger.getLogger(LogicUser.class.getName()).log(Level.SEVERE, null, ex);
                 return null;
             }
-                }else{
+
+        } else {
+
+            System.out.println("Error 2");
+
             return null;
-            } 
+        }
     }
 }

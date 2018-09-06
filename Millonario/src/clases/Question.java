@@ -54,7 +54,7 @@ public class Question {
     /**
      * @param question the question to set
      */
-    public void setAnswer(String question) {
+    public void setAnswer(String answer) {
         this.answer = answer;
     }
 
