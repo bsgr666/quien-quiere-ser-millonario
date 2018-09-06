@@ -17,7 +17,7 @@ public class LogicUser {
     
      //registrar usuarios
     public String registrarUser(User nuevoUser){
-        String sentencia="insert into user values(null,'"+nuevoUser.getNombre()+"','"+nuevoUser.getApellido()+"','"+nuevoUser.getSeudonimo()+"',"+nuevoUser.getEdad()+")";
+        String sentencia="insert into user values(null,'"+nuevoUser.getNameUser()+"','"+nuevoUser.getLastNameUSer()+"','"+nuevoUser.getAkaUser()+"',"+nuevoUser.getAgeUser()+")";
         System.out.print(sentencia);
         if(Persistencia.conectar()){
             try {
@@ -33,8 +33,8 @@ public class LogicUser {
     }
     //MODIFICAR
      public String modificarUser(User nuevoUser){
-        String sentencia= "UPDATE user  set name = '"+nuevoUser.getNombre()+"',lastName='"+nuevoUser.getSeudonimo()+
-                            "',age="+nuevoUser.getEdad()+")";
+        String sentencia= "UPDATE user  set nameUser = '"+nuevoUser.getNameUser()+"',lastnameUser='"+nuevoUser.getLastNameUSer()+"',akaUser='"+nuevoUser.getAkaUser()+
+                            "',age="+nuevoUser.getAgeUser()+")";
         
         System.out.print(sentencia);
         if(Persistencia.conectar()){
