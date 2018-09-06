@@ -10,86 +10,83 @@ package clases;
  * @author Estudiante
  */
 public class User {
-
-    private int CodUser;
-    private String Name;
-    private String LastName;
-    private String Aka;
-    private int Age;
-
-    public User() {
+    private int codUser;
+    private String nameUser;
+    private String lastNameUSer;
+    private String akaUser;
+    private int ageUser;
+    
+    public User(){
         
     }
 
     /**
-     * @return the CodUser
+     * @return the codUser
      */
     public int getCodUser() {
-        return CodUser;
+        return codUser;
     }
 
     /**
-     * @param CodUser the CodUser to set
+     * @param codUser the codUser to set
      */
-    public void setCodUser(int CodUser) {
-        this.CodUser = CodUser;
+    public void setCodUser(int codUser) {
+        this.codUser = codUser;
     }
 
     /**
-     * @return the Name
+     * @return the nameUser
      */
-    public String getName() {
-        return Name;
+    public String getNameUser() {
+        return nameUser;
     }
 
     /**
-     * @param Name the Name to set
+     * @param nameUser the nameUser to set
      */
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setNameUser(String nameUser) {
+        this.nameUser = nameUser;
     }
 
     /**
-     * @return the LastName
+     * @return the lastNameUSer
      */
-    public String getLastName() {
-        return LastName;
+    public String getLastNameUSer() {
+        return lastNameUSer;
     }
 
     /**
-     * @param LastName the LastName to set
+     * @param lastNameUSer the lastNameUSer to set
      */
-    public void setLastName(String LastName) {
-        this.LastName = LastName;
+    public void setLastNameUSer(String lastNameUSer) {
+        this.lastNameUSer = lastNameUSer;
     }
 
     /**
-     * @return the Aka
+     * @return the akaUser
      */
-    public String getAka() {
-        return Aka;
+    public String getAkaUser() {
+        return akaUser;
     }
 
     /**
-     * @param Aka the Aka to set
+     * @param akaUser the akaUser to set
      */
-    public void setAka(String Aka) {
-        this.Aka = Aka;
+    public void setAkaUser(String akaUser) {
+        this.akaUser = akaUser;
     }
 
     /**
-     * @return the Age
+     * @return the ageUser
      */
-    public int getAge() {
-        return Age;
+    public int getAgeUser() {
+        return ageUser;
     }
 
     /**
-     * @param Age the Age to set
+     * @param ageUser the ageUser to set
      */
-    public void setAge(int Age) {
-        this.Age = Age;
+    public void setAgeUser(int ageUser) {
+        this.ageUser = ageUser;
     }
-
-    
 }

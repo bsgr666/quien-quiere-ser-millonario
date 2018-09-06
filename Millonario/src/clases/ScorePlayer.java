@@ -27,6 +27,7 @@ public class ScorePlayer {
     /**
      * @return the codScorePlayer
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodScorePlayer() {
         return codScorePlayer;
     }
@@ -41,6 +42,7 @@ public class ScorePlayer {
     /**
      * @return the fechaScorePlayer
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public String getFechaScorePlayer() {
         return fechaScorePlayer;
     }
@@ -55,6 +57,7 @@ public class ScorePlayer {
     /**
      * @return the totalScorePlayer
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getTotalScorePlayer() {
         return totalScorePlayer;
     }
@@ -69,6 +72,7 @@ public class ScorePlayer {
     /**
      * @return the codUser
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCodUser() {
         return codUser;
     }
@@ -83,6 +87,7 @@ public class ScorePlayer {
     /**
      * @return the canResCorrecta
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCanResCorrecta() {
         return canResCorrecta;
     }
@@ -97,6 +102,7 @@ public class ScorePlayer {
     /**
      * @return the canResIncorrecta
      */
+    // PUBLIC: se utiliza de esta manera para poder ser llamado desde otro JAVA.class por ello es publico
     public int getCanResIncorrecta() {
         return canResIncorrecta;
     }
